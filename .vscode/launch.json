@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-ServicesApplication<SmartPaymentAdmin-Front>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "mainClass": "mx.com.smart.payment.admin.ServicesApplication",
+            "projectName": "SmartPaymentAdmin-Front",
+            "args": ""
+        }
+    ]
+}
