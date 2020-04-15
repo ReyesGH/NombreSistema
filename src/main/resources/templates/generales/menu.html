@@ -1,0 +1,82 @@
+
+<aside class="aside aside-fixed">
+      <div class="aside-header">
+        <a href="../../index.html" class="aside-logo">Nombre<span>Sistema</span></a>
+        <a href="" class="aside-menu-link">
+          <i data-feather="menu"></i>
+          <i data-feather="x"></i>
+        </a>
+      </div>
+
+      <div class="aside-body">
+        <div class="aside-loggedin">
+          <div class="d-flex align-items-center justify-content-start">
+            <a href="" class="avatar"><img src="https://via.placeholder.com/500" class="rounded-circle" alt=""></a>
+            <div class="aside-alert-link">
+              <a href="" class="new" data-toggle="tooltip" title="You have 2 unread messages"><i data-feather="message-square"></i></a>
+              <a href="" class="new" data-toggle="tooltip" title="You have 4 new notifications"><i data-feather="bell"></i></a>
+              <a href="" data-toggle="tooltip" title="Sign out"><i data-feather="log-out"></i></a>
+            </div>
+          </div>
+          <div class="aside-loggedin-user">
+            <a href="#loggedinMenu" class="d-flex align-items-center justify-content-between mg-b-2" data-toggle="collapse">
+              <h6 class="tx-semibold mg-b-0">José Carillo</h6>
+              <i data-feather="chevron-down"></i>
+            </a>
+            <p class="tx-color-03 tx-12 mg-b-0">CIO</p>
+          </div>
+          <div class="collapse" id="loggedinMenu">
+            <ul class="nav nav-aside mg-b-0">
+              <li class="nav-item"><a href="" class="nav-link"><i data-feather="edit"></i> <span>Editar Perfil</span></a></li>
+              <li class="nav-item"><a href="" class="nav-link"><i data-feather="user"></i> <span>Ver Perfil</span></a></li>
+              <li class="nav-item"><a href="" class="nav-link"><i data-feather="settings"></i> <span>Cuenta</span></a></li>
+              <li class="nav-item"><a href="" class="nav-link"><i data-feather="help-circle"></i> <span>Help Center</span></a></li>
+              <li class="nav-item"><a href="" class="nav-link"><i data-feather="log-out"></i> <span>Salir</span></a></li>
+            </ul>
+          </div>
+        </div><!-- aside-loggedin -->
+        <ul class="nav nav-aside">
+          <li class="nav-label">Indicadores</li>
+          <!-- <li th:classappend="${#httpServletRequest.getRequestURI() == '/dashBoard/transacciones' ? 'nav-item active':'nav-item'}"  > <a th:href="@{/dashBoard/transacciones}" class="nav-link"><i data-feather="shopping-bag"></i> <span>Monitor Ventas</span></a></li>
+          <li th:classappend="${#httpServletRequest.getRequestURI() == '/dashBoard/tpv' ? 'nav-item active':'nav-item'}" ><a th:href="@{/dashBoard/tpv}" class="nav-link"><i data-feather="globe"></i> <span>Monitor TPV</span></a></li>
+          <li th:classappend="${#httpServletRequest.getRequestURI() == '/dashBoard/costos' ? 'nav-item active':'nav-item'}"><a th:href="@{/dashBoard/costos}" class="nav-link"><i data-feather="pie-chart"></i> <span>Costos</span></a></li>
+          <li th:classappend="${#httpServletRequest.getRequestURI() == '/dashBoard/helpdesk' ? 'nav-item active':'nav-item'}"><a th:href="@{/dashBoard/helpdesk}" class="nav-link"><i data-feather="life-buoy"></i> <span>Helpdesk</span></a></li> -->
+          <li class="nav-label mg-t-25">Configuración</li>
+          <li th:classappend="${#httpServletRequest.getRequestURI() == '/perfil' ? 'nav-item active':'nav-item'}"><a th:href="@{/perfil}" class="nav-link"><i data-feather="calendar"></i> <span>Perfil del usuario</span></a></li>
+          <li class="nav-item"><a href="app-chat.html" class="nav-link"><i data-feather="message-square"></i> <span>Enlace SAT</span></a></li>
+          <li th:classappend="${#httpServletRequest.getRequestURI() == '/dashBoard/transacciones' ? 'nav-item active':'nav-item'}" ><a th:href="@{/clientes}" class="nav-link"><i data-feather="users"></i> <span>Movimientos bancarios</span></a></li>
+          <li th:classappend="${#httpServletRequest.getRequestURI() == '/dashBoard/transacciones' ? 'nav-item active':'nav-item'}" ><a th:href="@{/tpv}"class="nav-link"><i data-feather="users"></i> <span>Parametrización facturas</span></a></li>
+          <li class="nav-item"><a href="app-file-manager.html" class="nav-link"><i data-feather="file-text"></i> <span>Parametrización cotizaciones</span></a></li>
+          <li class="nav-item"><a href="app-mail.html" class="nav-link"><i data-feather="mail"></i> <span>Parametrización OC</span></a></li>
+          <li class="nav-item"><a href="app-mail.html" class="nav-link"><i data-feather="mail"></i> <span>Inventario</span></a></li>
+          <li class="nav-item"><a href="app-mail.html" class="nav-link"><i data-feather="mail"></i> <span>Catálogos</span></a></li>
+
+          <li class="nav-label mg-t-25">Bancos</li>
+          <li class="nav-item"><a href="app-calendar.html" class="nav-link"><i data-feather="calendar"></i> <span>Matriz de movimientos</span></a></li>
+          <li class="nav-item"><a href="app-chat.html" class="nav-link"><i data-feather="message-square"></i> <span>Carga de movimientos</span></a></li>
+          <li th:classappend="${#httpServletRequest.getRequestURI() == '/dashBoard/transacciones' ? 'nav-item active':'nav-item'}" ><a th:href="@{/clientes}"class="nav-link"><i data-feather="users"></i> <span>Transferencia SPEI</span></a></li>
+          <li th:classappend="${#httpServletRequest.getRequestURI() == '/dashBoard/transacciones' ? 'nav-item active':'nav-item'}" ><a th:href="@{/tpv}"class="nav-link"><i data-feather="users"></i> <span>Nómina</span></a></li>
+          <li class="nav-item"><a href="app-file-manager.html" class="nav-link"><i data-feather="file-text"></i> <span>Cobro SPEI</span></a></li>
+          <!-- <li class="nav-item with-sub">
+            <a href="" class="nav-link"><i data-feather="user"></i> <span>User Pages</span></a>
+            <ul>
+              <li><a href="page-profile-view.html">View Profile</a></li>
+              <li><a href="page-connections.html">Connections</a></li>
+              <li><a href="page-groups.html">Groups</a></li>
+              <li><a href="page-events.html">Events</a></li>
+            </ul>
+          </li> -->
+          <!-- <li class="nav-item with-sub">
+            <a href="" class="nav-link"><i data-feather="file"></i> <span>Other Pages</span></a>
+            <ul>
+              <li><a href="page-timeline.html">Timeline</a></li>
+            </ul>
+          </li> -->
+          <li class="nav-label mg-t-25">Clientes/Ventas</li>
+          <li class="nav-label mg-t-25">Proveedores/Compras</li>
+          <li class="nav-label mg-t-25">Documentos</li>
+          <li class="nav-label mg-t-25">Presupuesto</li>
+          <li class="nav-label mg-t-25">Reportes</li>
+        </ul>
+      </div>
+    </aside>
